@@ -1,0 +1,14 @@
+[user]
+  email = matt.lawrence86@gmail.com
+  name = Matt Lawrence
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  ls = log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate
+  ll = log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate --numstat
+  lds = log --pretty=format:'%C(yellow)%h %ad%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate --date=relative
+  ff = merge --ff-only
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  interactive = auto
