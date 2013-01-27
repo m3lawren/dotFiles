@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+my $lineLength = shift || 50;
+
+@input = <STDIN>;
+foreach (@input) {
+  chomp;
+
+  my $out = $_;
+  if (length $_ > $lineLength) {
+    $out = (substr $_, 0, $lineLength - 3) . "...";
+  } 
+
+  print $out;
+}
