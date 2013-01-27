@@ -8,11 +8,11 @@ Config { font = "xft:Source Code Pro-9"
                     , Run Swap [] 10
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                     , Run StdinReader
-                    -- , Run Com "rhythmbox-playing" [] "music" 10
+                    , Run Com "rhythmbox-playing" [] "music" 10
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% | %eth0% | %date%"
+       , template = "%StdinReader% }{ %music% | %cpu% | %memory% * %swap% | %eth0% | %date%"
        -- I just want the date since I run gkrellm all the time
        --, template = "StdinReader% }{ %date%"
        }

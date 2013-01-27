@@ -1,3 +1,11 @@
 #!/bin/bash
 
-rhythmbox-client --no-start --print-playing | truncate 50 
+ps -A | grep " rhythmbox$" >/dev/null 2>&1
+
+SUCCESS=$?
+
+if [ "$SUCCESS" -eq "0" ]; then
+  rhythmbox-client --no-start --print-playing | truncate 50 
+else
+  echo "Not running"
+fi
