@@ -138,7 +138,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_l     ), io (spawn "/usr/bin/gnome-screensaver-command -l"))
 
     -- Screenshot
-    , ((modm,               xK_Print ), io (spawn "/usr/bin/scrot /home/matt/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png -d 1"))
+    , ((modm,               xK_Print ), io (spawn "/usr/bin/scrot ~/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png -d 1"))
 
     -- Set wallpaper
     , ((modm .|. controlMask, xK_p     ), io (spawn "/usr/bin/feh --bg-fill ~/Pictures/df_bigface_wp.png"))
@@ -291,7 +291,7 @@ myStartupHook = do
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do
-  xmproc <- spawnPipe "xmobar /home/matt/.xmobarrc"
+  xmproc <- spawnPipe "xmobar ~/.xmobarrc"
   xmonad $ defaults xmproc
 
 -- A structure containing your configuration settings, overriding
