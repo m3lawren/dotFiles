@@ -2,12 +2,14 @@
   email = matt.lawrence86@gmail.com
   name = Matt Lawrence
 [alias]
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 30
   ls = log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate
   ll = log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate --numstat
   lds = log --pretty=format:'%C(yellow)%h %ad%Cred%d %Creset%s%C(bold blue) [%cn]' --decorate --date=relative
   ff = merge --ff-only
-  fetch-all = fetch -p --all
+  fetch-all = fetch --prune --all
+  ai = add --interactive
+  ri = rebase --interactive
 [color]
   branch = auto
   diff = auto
