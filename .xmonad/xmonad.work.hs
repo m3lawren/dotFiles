@@ -282,7 +282,7 @@ myLogHook xmproc = do
 --
 -- By default, do nothing.
 myStartupHook = do 
-  spawn "feh --bg-fill ~/Pictures/df_bigface_wp.png"
+  spawn "feh --bg-fill ~/Pictures/wallpaper.jpg"
   setWMName "LG3D"
 
 ------------------------------------------------------------------------
