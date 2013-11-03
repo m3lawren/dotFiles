@@ -10,7 +10,7 @@
   ff = merge --ff-only
   fetch-all = fetch --prune --all
   ai = add --interactive
-  ri = rebase --interactive
+  ri = rebase --interactive --autosquash
 [color]
   branch = auto
   diff = auto
